@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="140dp"
+    android:background="@color/santanderWhite"
+    android:id="@+id/investmentFrame">
+
+    <FrameLayout
+        android:id="@+id/frame_investment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:scrollbars="horizontal"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/include_description"
+                layout="@layout/invest_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/include_risk"
+                layout="@layout/investment_risk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/include_description" />
+
+
+            <TextView
+                android:id="@+id/infoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginVertical="8dp"
+                android:fontFamily="@font/dinpro_bold"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/santanderDescription"
+                android:textSize="@dimen/txtRegular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include_risk" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/infoTitle">
+
+                <TextView
+                    android:id="@+id/moreInfo_Mtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dinpro_medium"
+                    android:gravity="left"
+                    android:text="@null"
+                    android:textColor="@color/santanderLtGray" />
+
+                <TextView
+                    android:id="@+id/moreInfo_Mfundo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/dinpro_medium"
+                    android:gravity="right"
+                    android:text="@string/fundo"
+                    android:textColor="@color/santanderLtGray" />
+
+                <TextView
+                    android:id="@+id/moreInfo_Mcdi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/dinpro_medium"
+                    android:gravity="right"
+                    android:text="@string/cdi"
+                    android:textColor="@color/santanderLtGray" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewMoreInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginVertical="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listItem="@layout/investment_more_info"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutTitle"/>
+
+            <ImageView
+                android:id="@+id/separator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginVertical="24dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/separator"
+                app:layout_constraintTop_toBottomOf="@+id/recycleViewMoreInfo" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listItem="@layout/invest_info"
+                app:layout_constraintTop_toBottomOf="@+id/separator2"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewDownInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listItem="@layout/invest_info"
+                app:layout_constraintTop_toBottomOf="@+id/recycleViewInfo"/>
+
+            <include
+                layout="@layout/item_button_round"
+                android:id="@+id/include_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/recycleViewDownInfo" />
+
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

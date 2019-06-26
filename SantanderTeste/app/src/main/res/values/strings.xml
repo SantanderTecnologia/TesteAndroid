@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SantanderApp</string>
+    <string name="contato">Contato</string>
+    <string name="investimento">Investimento</string>
+
+    <string name="mes">No mês</string>
+    <string name="ano">No Ano</string>
+    <string name="meses">12 meses</string>
+
+    <string name="fundo">Fundo</string>
+    <string name="cdi">CDI</string>
+
+    <string name="investir">Investir</string>
+    <string name="baixar">Baixar</string>
+
+    <string name="sucesso">Mensagem enviada com sucesso :)</string>
+    <string name="obrigado">Obrigado!</string>
+    <string name="novaMensagem">Enviar nova mensagem</string>
+
+    <string name="disable">Ainda em criaçao</string>
+</resources>

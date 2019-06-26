@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportHeight="32"
+    android:viewportWidth="32" >
+
+    <path
+        android:name="download_bottom"
+        android:pathData="M10,22.5 l20,0"
+        android:strokeColor="@color/santanderRed"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <path
+        android:name="arrow"
+        android:pathData="M10,17.5 L20,21 L30,17.25"
+        android:strokeColor="@color/santanderRed"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <path
+        android:name="arrow"
+        android:pathData="M20,5 L20,20"
+        android:strokeColor="@color/santanderRed"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+</vector>

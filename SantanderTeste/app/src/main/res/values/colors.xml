@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <!-- santander colors common -->
+    <color name="santanderWhite">#FFFFFF</color>
+    <color name="santanderGray">#333333</color>
+    <color name="santanderLtGray">#ACACAC</color>
+    <color name="santanderLines">#EFEEED</color>
+    <color name="santanderRed">#DA0101</color>
+    <color name="santanderLtRed">#EB7676</color>
+    <color name="santanderDkRed">#C90505</color>
+    <color name="santanderDescription">#7E7E7E</color>
+
+    <!-- santander colors contact -->
+    <color name="santanderStroke">#979797</color>
+    <color name="santanderCorrect">#65BE30</color>
+    <color name="santanderWrong">#FF1F1F</color>
+    <color name="santanderBgClearForm">#F6F6F6</color>
+    <color name="santanderXClearForm">#AFA9A3</color>
+
+    <!-- santander colors investment -->
+    <color name="santanderRisk1">#74DA61</color>
+    <color name="santanderRisk2">#4AC16C</color>
+    <color name="santanderRisk3">#FFC011</color>
+    <color name="santanderRisk4">#FF742C</color>
+    <color name="santanderRisk5">#FF3634</color>
+</resources>
